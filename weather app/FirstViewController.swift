@@ -36,7 +36,7 @@ class FirstViewController: UIViewController , UITextFieldDelegate {
                     let matches = self.matchesForRegexInText("<div data-magellan-destination=\"forecast-part-0\"></div></a><p class=\"summary\"><b>(.+)</p>", text: webContent! as String)
                     if matches.count == 0 {
                         self.errorMessageLabel.text = "Your search for \(self.cityName.text!) didn't match anything."
-                          self.webView.loadRequest(NSURLRequest(URL: NSURL(string: "about:blank")!))
+                        
                         return
                     }
                     let weatherStringWithHTML = matches[0]
@@ -46,6 +46,9 @@ class FirstViewController: UIViewController , UITextFieldDelegate {
                     self.webView.loadHTMLString(finalString, baseURL: nil)
                     self.errorMessageLabel.text = ""
                 })
+            } else {
+                self.errorMessageLabel.text = "Your search for \(self.cityName.text!) didn't match anything."
+              
             }
         }
         

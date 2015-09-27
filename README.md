@@ -7,7 +7,7 @@ Uses an asynchronous call to fetch weather data and parse a response from HTML
 * UIWebView - to display HTML
 * UITextFieldDelegate - to escape the keyboard
 * AutoLayout Constraints
-* NSURLSe
+* NSURLSession
 
 ### GIF
 

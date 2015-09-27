@@ -6,6 +6,5 @@ Uses an asynchronous call to fetch weather data and parse a response from HTML
 * AutoLayout Constraints
 * NSURLSession
 ### GIF
-[Image of weather-app]
-(http://i.imgur.com/ctqFNWk.gifv)
+[Image of weather-app](http://i.imgur.com/ctqFNWk.gifv)
 
